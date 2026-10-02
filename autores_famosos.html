@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>autores_famosos</title>
+    <link rel="stylesheet" href="autores_famosos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="autores_famosos.js" defer></script>
+</head>
+<body>
+    <!------------------------------------>
+    <!--|estructuracion_autores_famosos|-->
+    <!------------------------------------>
+    <header class="encabezado">
+        <div class="icono_encabezado">
+            <i class="fa-solid fa-book-open"></i>
+        </div>
+        <div>
+            <span class="etiqueta">BIBLIOTECA LITERARIA</span>
+            <h1>Autores Famosos</h1>
+            <p>Conoce autores y algunas de sus obras más reconocidas.</p>
+        </div>
+    </header>
+    <!-------------------------->
+    <!--|contenido_de_autores|-->
+    <!-------------------------->
+    <main class="contenedor">
+        <section class="introduccion">
+            <div class="icono_intro">
+                <i class="fa-solid fa-feather-pointed"></i>
+            </div>
+            <div>
+                <h2>Grandes escritores</h2>
+                <p>Personaliza la información de cada autor.</p>
+            </div>
+        </section>
+        <!---------------------->
+        <!--|lista_de_autores|-->
+        <!---------------------->
+        <section class="lista_autores">
+            <article class="autor" data-id="1">
+                <div class="cabecera_autor">
+                    <div class="numero_autor">01</div>
+                    <div class="icono_autor">
+                        <i class="fa-solid fa-user-pen"></i>
+                    </div>
+                    <div>
+                        <span>AUTOR DESTACADO</span>
+                        <h2 class="nombre_autor">Gabriel García Márquez</h2>
+                    </div>
+                </div>
+                <div class="datos_autor">
+                    <label>Nombre del autor</label>
+                    <input type="text" class="campo_nombre">
+                    <label>Nacionalidad</label>
+                    <input type="text" class="campo_nacionalidad">
+                    <label>Libro destacado</label>
+                    <input type="text" class="campo_libro">
+                    <label>Descripción</label>
+                    <textarea class="campo_descripcion"></textarea>
+                    <div class="libro">
+                        <i class="fa-solid fa-book"></i>
+                        <span>Obra principal</span>
+                    </div>
+                    <div class="botones">
+                        <button class="boton_guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button class="boton_restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                    </div>
+                    <p class="mensaje_autor"></p>
+                </div>
+            </article>
+            <article class="autor" data-id="2">
+                <div class="cabecera_autor">
+                    <div class="numero_autor">02</div>
+                    <div class="icono_autor">
+                        <i class="fa-solid fa-user-pen"></i>
+                    </div>
+                    <div>
+                        <span>AUTOR DESTACADO</span>
+                        <h2 class="nombre_autor">Miguel de Cervantes</h2>
+                    </div>
+                </div>
+                <div class="datos_autor">
+                    <label>Nombre del autor</label>
+                    <input type="text" class="campo_nombre">
+                    <label>Nacionalidad</label>
+                    <input type="text" class="campo_nacionalidad">
+                    <label>Libro destacado</label>
+                    <input type="text" class="campo_libro">
+                    <label>Descripción</label>
+                    <textarea class="campo_descripcion"></textarea>
+                    <div class="libro">
+                        <i class="fa-solid fa-book"></i>
+                        <span>Obra principal</span>
+                    </div>
+                    <div class="botones">
+                        <button class="boton_guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button class="boton_restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                    </div>
+                    <p class="mensaje_autor"></p>
+                </div>
+            </article>
+            <article class="autor" data-id="3">
+                <div class="cabecera_autor">
+                    <div class="numero_autor">03</div>
+                    <div class="icono_autor">
+                        <i class="fa-solid fa-user-pen"></i>
+                    </div>
+                    <div>
+                        <span>AUTOR DESTACADO</span>
+                        <h2 class="nombre_autor">Jane Austen</h2>
+                    </div>
+                </div>
+                <div class="datos_autor">
+                    <label>Nombre del autor</label>
+                    <input type="text" class="campo_nombre">
+                    <label>Nacionalidad</label>
+                    <input type="text" class="campo_nacionalidad">
+                    <label>Libro destacado</label>
+                    <input type="text" class="campo_libro">
+                    <label>Descripción</label>
+                    <textarea class="campo_descripcion"></textarea>
+                    <div class="libro">
+                        <i class="fa-solid fa-book"></i>
+                        <span>Obra principal</span>
+                    </div>
+                    <div class="botones">
+                        <button class="boton_guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button class="boton_restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                    </div>
+                    <p class="mensaje_autor"></p>
+                </div>
+            </article>
+        </section>
+        <!-------------------------------->
+        <!--|accion_de_restablecer_todo|-->
+        <!-------------------------------->
+        <section class="acciones">
+            <button id="boton_restablecer"><i class="fa-solid fa-trash"></i>Restablecer todos</button>
+            <p id="mensaje_general"></p>
+        </section>
+    </main>
+</body>
+</html>

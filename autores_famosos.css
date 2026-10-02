@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f4efe6;
+    color: #29241f;
+    min-height: 100vh;
+}
+/*----------------------------*/
+/*--|estilo_autores_famosos|--*/
+/*----------------------------*/
+.encabezado {
+    background: #3d3028;
+    color: white;
+    padding: 35px 8%;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.icono_encabezado {
+    width: 70px;
+    height: 70px;
+    background: #c99b5b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.etiqueta {
+    color: #d9b77c;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.encabezado h1 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    margin: 5px 0;
+}
+.encabezado p {
+    color: #ddd1c4;
+}
+/*---------------------------------*/
+/*--|estilo_contenido_de_autores|--*/
+/*---------------------------------*/
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 35px auto;
+}
+.introduccion {
+    background: #fffaf2;
+    border-left: 6px solid #b87932;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+.icono_intro {
+    font-size: 30px;
+    color: #9b5d20;
+}
+.introduccion h2 {
+    font-family: Georgia, serif;
+    margin-bottom: 5px;
+}
+.introduccion p {
+    color: #74695f;
+}
+/*-----------------------------*/
+/*--|estilo_lista_de_autores|--*/
+/*-----------------------------*/
+.lista_autores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+.autor {
+    background: #fffdf9;
+    border: 1px solid #dfd2c1;
+    box-shadow: 0 8px 20px rgba(65, 45, 25, 0.09);
+    overflow: hidden;
+}
+.cabecera_autor {
+    background: #594338;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.numero_autor {
+    font-family: Georgia, serif;
+    color: #d9b77c;
+    font-size: 25px;
+}
+.icono_autor {
+    width: 45px;
+    height: 45px;
+    background: #c99b5b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cabecera_autor span {
+    font-size: 10px;
+    color: #d9b77c;
+}
+.cabecera_autor h2 {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    margin-top: 3px;
+}
+.datos_autor {
+    padding: 22px;
+}
+.datos_autor label {
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 13px 0 6px;
+}
+.datos_autor input, .campo_descripcion {
+    width: 100%;
+    border: 1px solid #d5c5b1;
+    background: #faf6ef;
+    padding: 11px;
+    border-radius: 5px;
+    outline: none;
+    font-family: Arial, sans-serif;
+}
+.datos_autor input:focus, .campo_descripcion:focus {
+    border-color: #b87932;
+}
+.campo_descripcion {
+    min-height: 90px;
+    resize: vertical;
+}
+.libro {
+    margin-top: 18px;
+    padding: 12px;
+    background: #efe1ce;
+    color: #74491f;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: bold;
+}
+.botones {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+.botones button, #boton_restablecer {
+    border: none;
+    padding: 11px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.boton_guardar {
+    background: #5b7f55;
+    color: white;
+}
+.boton_restaurar {
+    background: #777;
+    color: white;
+}
+.botones button:hover, #boton_restablecer:hover {
+    opacity: 0.85;
+}
+.botones i, #boton_restablecer i {
+    margin-right: 7px;
+}
+.mensaje_autor {
+    min-height: 20px;
+    margin-top: 12px;
+    color: #5b7f55;
+    font-size: 13px;
+}
+/*---------------------------------------*/
+/*--|estilo_accion_de_restablecer_todo|--*/
+/*---------------------------------------*/
+.acciones {
+    text-align: center;
+    margin: 30px 0;
+}
+#boton_restablecer {
+    background: #a4493f;
+    color: white;
+}
+#mensaje_general {
+    min-height: 22px;
+    margin-top: 12px;
+    color: #5b7f55;
+}
